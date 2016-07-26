@@ -1,7 +1,7 @@
-from sklearn.linear_model import Perceptron
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import accuracy_score
 import numpy as np
+from sklearn.linear_model import Perceptron
+from sklearn.metrics import accuracy_score
+from sklearn.preprocessing import StandardScaler
 
 # scaler = StandardScaler()
 # X_train = np.array([[100.0, 2.0], [50.0, 4.0], [70.0, 6.0]])
@@ -45,5 +45,3 @@ y_predict = clf_train.predict(X_test_scaled)
 # clf_train.
 accuracy_scale = accuracy_score(y_test, y_predict)
 print("with scale %s" % accuracy_scale)
-
-
